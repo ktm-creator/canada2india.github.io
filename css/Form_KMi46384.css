@@ -1,0 +1,50 @@
+legend {
+  padding: 10px;
+  background-color: white;
+  color: crimson;
+  border-radius: 5px;
+  border-color: crimson;
+}
+fieldset > div {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2px;
+  padding: 2%;
+}
+fieldset > div > * {
+  flex: 1 1 200px;
+}
+fieldset {
+  margin-bottom: 5px;
+
+  border-radius: 10px;
+  padding: 3%;
+  background-color: rgb(248, 139, 139);
+}
+textarea {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  border-radius: 5px;
+  border-color: rgb(248, 139, 139);
+}
+input,
+label {
+  border-radius: 5px;
+  border-color: rgb(248, 139, 139);
+}
+label {
+  color: white;
+}
+form {
+  margin: 2%;
+  width: 50%;
+}
+input[type="submit"] {
+  margin: 5px;
+  background-color: white;
+  color: rgb(248, 139, 139);
+}
+input {
+  height: 30px;
+}

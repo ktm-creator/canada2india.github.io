@@ -1,0 +1,149 @@
+.steps {
+  margin: 0, 10%;
+  height: 630px;
+  overflow: hidden;
+  padding: 10px 0 40px 60px;
+}
+.steps ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.5s linear;
+  top: 0;
+}
+.steps ul:last-of-type {
+  top: 80px;
+}
+.steps ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px dashed red;
+  position: absolute;
+  top: 0%;
+  left: 200px;
+}
+.steps ul li {
+  margin: 20px 250px 100px;
+  position: relative;
+  padding: 10px 20px;
+  background: rgb(230, 61, 95);
+  color: white;
+  border-radius: 10px;
+  line-height: 20px;
+  width: 75%;
+}
+.steps ul li > span {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px solid crimson;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.steps ul li > span:before,
+.steps ul li > span:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff6d6d;
+  border: 2px solid white;
+  position: absolute;
+  left: -7.5px;
+}
+.steps ul li > span::before {
+  top: -10px;
+}
+.steps ul li > span::after {
+  top: 95%;
+}
+
+.steps .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.steps.info::first-letter {
+  text-transform: capitalize;
+  line-height: 1.7;
+}
+
+.steps .time span {
+  position: absolute;
+  left: -270px;
+  color: crimson;
+  font-size: 80%;
+  font-weight: bold;
+}
+.steps.time:first-child {
+  top: -16px;
+}
+.arrow {
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  color: crimson;
+}
+.arrow:hover {
+  -webkit-animation: arrow 1s linear infinite;
+  -moz-animation: arrow 1s linear infinite;
+  -o-animation: arrow 1s linear infinite;
+  animation: arrow 1s linear infinite;
+}
+
+.style ul:last-of-type .arrow {
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: rotateX(180deg);
+  cursor: pointer;
+}
+@keyframes arrow {
+  0%,
+  100% {
+    top: 105%;
+  }
+  50% {
+    top: 106%;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0%,
+  100% {
+    top: 105%;
+  }
+  50% {
+    top: 106%;
+  }
+}
+
+@-moz-keyframes arrow {
+  0%,
+  100% {
+    top: 105%;
+  }
+  50% {
+    top: 106%;
+  }
+}
+
+@-o-keyframes arrow {
+  0%,
+  100% {
+    top: 105%;
+  }
+  50% {
+    top: 106%;
+  }
+}
